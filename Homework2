@@ -1,0 +1,64 @@
+// num 1 
+
+const fruts = [
+  { id: 0, name: "Apple" },
+  { id: 1, name: "Tomat" },
+  { id: 2, name: "Cherry" },
+  { id: 3, name: "Orange" },
+];
+
+const names = fruts.map(item => item.name);
+
+console.log(names);
+
+
+
+// num 2
+
+for (let i = 2; i <= 10; i++) {
+  if (i % 2 === 0) {
+    console.log(i);
+  }
+}
+
+
+
+// num 3
+
+let i = 0;
+
+while (i < 5) {
+  console.log(`цифра ${i}!`);
+  i++;
+}
+
+// num 4
+
+let num;
+
+do {
+  num = prompt("Введіть число яке буде більше ніж 100:");
+} while (num !== null && num !== "" && num <= 100);
+
+console.log("Ви ввели:", num);
+
+
+
+// num 5
+
+const girls = [
+  { age: 23, name: "Оля" },
+  { age: 29, name: "Аня" },
+  { age: 10, name: "Юля" },
+  { age: 20, name: "Катя" },
+];
+
+let sum = 0;
+
+for (let girl of girls) {
+  sum += girl.age;
+}
+
+const average = sum / girls.length;
+
+console.log("середній вік:", average);
